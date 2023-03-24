@@ -44,7 +44,7 @@ html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
 
 <body class="front not-logged-in page-node no-sidebars i18n-en front not-logged-in cuerpo_con_promo cuerpo_con_menu page-node-1">
 
-	<div id="sticky_footer-body">
+	<div id="sticky_footer-body" style="background-color: #add8e6;">
             <div id="encabezado">
                 <div class="cajon">
                     
@@ -91,7 +91,7 @@ y se envuelve alrededor de todo el contenido de la página. -->
 
 <!-- Header -->
 
-<div class="w3-center title adjust-fontcolor logo">
+<div class="w3-center title adjust-fontcolor logo" >
 	<div class="w3-center">
 	<img class="w3-round adjust-image" src="assets/logoinub.jpg" width="150" alt=""> 
 </div> 
@@ -107,7 +107,7 @@ y se envuelve alrededor de todo el contenido de la página. -->
 
 <!-- Imagen de portada -->
 <!-- Esta imagen será reemplazada una vez que se ejecute el código js. -->
-<div class="w3-center">
+<div class="w3-center" style="background-color:#add8e6;">
 	<div align="center">
 	<img id="selected-image" class="w3-round adjust-image" src="assets/samplepic.jpg" alt=""> 
     </div>
@@ -115,7 +115,7 @@ y se envuelve alrededor de todo el contenido de la página. -->
 
 
 <div class="w3-center">
-	<div class="progress-bar">Modelo con Inteligencia Artificial cargando...</div>
+	<div class="progress-bar" style="color:#4682b4!important;">Modelo con Inteligencia Artificial cargando...</div>
 </div>
 
 
@@ -130,32 +130,30 @@ y se envuelve alrededor de todo el contenido de la página. -->
 <!-- Button, cree una etiqueta button con propiedades de cambio de color una vez es seleccionado despliegue la 
 apertura de camara o realice un llamado al método simulateClick()-->
 <div id="btnn" class="w3-center bottom-padding">
-	
+    <!-- <button class="w3-btn w3-blue w3-round w3-margin w3-margin-botton adjust-spacing w3-hover-green b
+    tn-font w3-padding w3-space-letters w3-card-4" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)">
+    <i class='fas fa-camera w3-padding-right', style='font-size:15px'></i><b>Enviar una imagen de una lesión en la piel</b></button>
+    -->
 
-
-	
 </div> 
-
-
-
 
 </div><!--Final del Home Page, documente los resultados obtenidos del modelo, a saber, Exactitud, Presición y Sencibilidad, dando créditos a la base de datos trabajada-->
 
 <div class='w3-padding'>
-	
-
-
-
-
+	<h5 class="space-letters-tag.font-w3-text-green"><b>Características Técnicas del modelo:</b></h5>
+    <h5 class="space-letters-tag.font-w3-text-green"><b>Exactitud: 0.87</b></h5>
+    <h5 class="space-letters-tag.font-w3-text-green"><b>Precisión: 0.76</b></h5>
+    <h5 class="space-letters-tag.font-w3-text-green"><b>Sensibilidad: 0.96</b></h5>
+    <h6 class="space-letters-tag.font-w3-text-green"><b>El modelo está basado en el conjunto de 10015 imágenes detmatoscópicas de Harvard, entenado con TensorFlow</b></h6>
 </div>
 
 <!-- Simulamos clics en estos dos botones de carga inicial. -->
-<div class="hide">
-	<button id='predict-button'>Predict</button>
+<div align="center" class="hide" style="background-color:#b0c4de;">
+	<button id='predict-button' style="background-color: #77b5fe; color:bisque">Predict</button>
 </div>
 
-<div class="hide">
-	<input id="image-selector" type="file">
+<div align="center" class="hide" style="background-color:#b0c4de;"">
+	<input id="image-selector" type="file" >
 </div>
 <!--===================================-->
 
